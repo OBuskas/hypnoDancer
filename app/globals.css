@@ -1,5 +1,5 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -11,14 +11,14 @@
   --card-foreground: oklch(0.2 0.02 45);
   --popover: oklch(0.98 0.02 75);
   --popover-foreground: oklch(0.2 0.02 45);
-  --primary: oklch(0.65 0.15 65); /* Mid Yellow #FCBA2E */
-  --primary-foreground: oklch(0.2 0.02 45);
+  --primary: oklch(65.011% 0.14733 63.724); /* Mid Yellow #FCBA2E */
+  --primary-foreground: oklch(0.94 0.02 17);
   --secondary: oklch(0.72 0.12 70); /* Light Yellow #F1C644 */
   --secondary-foreground: oklch(0.2 0.02 45);
   --muted: oklch(0.92 0.02 75);
   --muted-foreground: oklch(0.45 0.02 45);
   --accent: oklch(0.68 0.14 55); /* Green #F9A91C */
-  --accent-foreground: oklch(0.2 0.02 45);
+  --accent-foreground: oklch(0.94 0.02 17);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.985 0 0);
   --border: oklch(0.85 0.03 75);
@@ -76,8 +76,8 @@
 }
 
 @theme inline {
-  --font-sans: "Geist", "Geist Fallback";
-  --font-mono: "Geist Mono", "Geist Mono Fallback";
+  --font-sans: 'Geist', 'Geist Fallback';
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -159,3 +159,4 @@ html {
 .animate-scroll-left {
   animation: scroll-left 20s linear infinite;
 }
+

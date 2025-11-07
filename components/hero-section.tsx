@@ -1,16 +1,13 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
+import Image from 'next/image';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
+import { ArrowRight } from 'lucide-react';
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden border-b border-border/40 bg-background py-20 lg:py-32">
+    <section className="relative overflow-hidden border-b border-border/40 bg-background py-20 md:pt-0">
       <div className="absolute left-1/4 top-20 h-64 w-64 rounded-full bg-primary/20 blur-3xl animate-pulse-soft"></div>
-      <div
-        className="absolute right-1/4 bottom-20 h-80 w-80 rounded-full bg-accent/15 blur-3xl animate-pulse-soft"
-        style={{ animationDelay: "2s" }}
-      ></div>
+      <div className="absolute right-1/4 bottom-20 delay-200 h-80 w-80 rounded-full bg-accent/15 blur-3xl animate-pulse-soft"></div>
 
       <div className="container relative mx-auto max-w-[1550px] px-4 md:px-6">
         <div className="grid items-center gap-12 lg:grid-cols-2">
@@ -29,8 +26,8 @@ export function HeroSection() {
             </h1>
 
             <p className="text-pretty text-lg text-muted-foreground md:text-xl">
-              Smart contract-based payroll solutions for DAOs, startups, and businesses. Pay your team in stablecoins
-              with transparency, security, and zero intermediaries.
+              Smart contract-based payroll solutions for DAOs, startups, and businesses. Pay your
+              team in stablecoins with transparency, security, and zero intermediaries.
             </p>
 
             <div className="flex flex-col gap-4 md:flex-row">
@@ -79,5 +76,6 @@ export function HeroSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
+
